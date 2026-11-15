@@ -51,11 +51,15 @@ article {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 16px;
 }
 
-footer a,
+footer a {
+    text-decoration: none;
+}
+
 .redes-sociais a {
     text-decoration: none;
 }
@@ -96,16 +100,16 @@ h1 {
 
 .hero article {
     position: absolute;
-    bottom: 8px;
-    left: 360px;
-    right: 12px;
+    bottom: 12px;
+    left: 24px;
+    right: 24px;
     margin: 0;
-    padding: 8px 12px;
+    padding: 10px 14px;
     background-color: rgba(9, 44, 48, 0.85);
     color: var(--accent1-color);
     border-left: 5px solid var(--accent2-color);
-    font-size: 0.82rem;
-    line-height: 1.35;
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .hero article p {
@@ -115,7 +119,7 @@ h1 {
 
 .hero article img {
     float: right;
-    width: 100px;
-    margin-left: 10px;
+    width: 90px;
+    margin-left: 12px;
     border: 1px solid var(--accent1-color);
 }
