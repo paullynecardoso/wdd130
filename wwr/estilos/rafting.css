@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: #1F2933;
+    color: var(--primary-color);
     background-color: var(--accent1-color);
     line-height: 1.6;
 }
@@ -38,6 +38,7 @@ h2 {
     color: var(--primary-color);
     text-align: center;
     letter-spacing: 1px;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 nav,
@@ -48,8 +49,20 @@ article {
     padding: 8px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a,
 .redes-sociais a {
     text-decoration: none;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 12px;
 }
 
 .redes-sociais img {
@@ -78,6 +91,7 @@ h1 {
     color: var(--accent1-color);
     font-size: 2rem;
     text-transform: uppercase;
+    border-bottom: none;
 }
 
 .hero article {
