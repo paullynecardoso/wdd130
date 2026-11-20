@@ -4,68 +4,128 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b1e16;
+    background-color: #fcfaf7;
+    line-height: 1.5;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Barra de Navegação em Terracota Outono */
 nav {
-    background-color: #333;
+    background-color: #7c3626;
     padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: #fff;
-    padding: 0.5rem 1rem;
+    color: #ffffff;
+    padding: 0.5rem;
     display: block;
-    /* Obrigatório pelo critério do curso */
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Grade Principal */
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 h1 {
-    color: #222;
+    color: #7c3626;
+    border-bottom: 1px solid #5c4033;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
 }
 
+/* Foto de Perfil com Moldura Branca e Sombreamento */
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #ccc;
-    padding: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #a0522d;
+    padding: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(60, 40, 25, 0.35);
     float: right;
     margin: 0 0 1rem 1rem;
 }
 
-aside {
+main p {
+    margin-bottom: 1rem;
+}
+
+/* Caixas Estilizadas (.caixa) em Areia Quente */
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgba(124, 54, 38, 0.2);
+    padding: 1rem;
+    background-color: #f5efe6;
+    color: #2b1e16;
+}
+
+/* Caixa Lateral com Imagem da Cidade Maior */
+aside.caixa {
     width: 20rem;
     position: relative;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 3.4rem;
+}
+
+aside.caixa h2 {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    color: #5c281c;
 }
 
 aside img {
-    width: 200px;
+    width: 260px;
     height: auto;
+    margin-bottom: 0.75rem;
 }
 
-aside h2 {
-    position: absolute;
-    top: 25px;
-    left: 115px;
-}
-
-p {
+aside p {
+    font-size: 0.95rem;
     padding: 0;
 }
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+ul.caixa {
+    padding-left: 2rem;
 }
 
-/* Seletores de Classe */
-.caixa {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
+ul.caixa a {
+    color: #7c3626;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #5c4033;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4a3525;
 }
