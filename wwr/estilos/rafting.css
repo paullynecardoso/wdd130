@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #092C30;
+    --primary-color: #0D3435;
     --secondary-color: #B85D30;
     --accent1-color: #F7F4ED;
     --accent2-color: #F8C977;
@@ -30,18 +30,18 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 140px 1fr;
     align-items: center;
-    padding: 16px 32px;
+    padding: 12px 32px;
     background-color: var(--primary-color);
     border-bottom: 3px solid var(--secondary-color);
 }
 
 header img {
-    width: 82px;
+    width: 116px;
     height: auto;
     display: block;
-    border-radius: 2px;
+    mix-blend-mode: lighten;
 }
 
 header nav {
@@ -52,26 +52,34 @@ header nav {
 header nav ul {
     display: flex;
     justify-content: flex-end;
-    gap: 8px;
     list-style: none;
 }
 
+header nav li {
+    border: 1px solid #F7F4ED40;
+    border-right: none;
+}
+
+header nav li:last-child {
+    border-right: 1px solid #F7F4ED40;
+}
+
 header nav a {
+    display: block;
     color: var(--accent1-color);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.84rem;
     letter-spacing: 0.8px;
     text-transform: uppercase;
-    padding: 8px 14px;
-    border-radius: 2px;
+    padding: 9px 16px;
     transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
 header nav a:hover {
     background-color: var(--secondary-color);
     color: #ffffff;
-    box-shadow: 0 3px 10px rgba(217, 83, 30, 0.45);
+    box-shadow: 0 3px 10px #D9531E73;
 }
 
 h2 {
@@ -112,7 +120,7 @@ article {
     text-align: center;
     font-family: var(--heading-font);
     font-weight: 700;
-    background-color: rgba(9, 44, 48, 0.88);
+    background-color: #0C3334E0;
     color: #ffffff;
     font-size: 1.8rem;
     letter-spacing: 4px;
@@ -125,7 +133,7 @@ article {
     left: 32px;
     right: 32px;
     padding: 18px 22px;
-    background-color: rgba(9, 44, 48, 0.94);
+    background-color: #0C3334F0;
     color: #F4F1EA;
     border-left: 4px solid var(--secondary-color);
     font-size: 0.88rem;
@@ -150,7 +158,7 @@ article {
     object-fit: cover;
     margin-left: 18px;
     border-radius: 2px;
-    border: 1px solid rgba(247, 244, 237, 0.35);
+    border: 1px solid #F7F4ED59;
 }
 
 .historia {
@@ -181,10 +189,10 @@ article {
 
 .aventuras {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 16px;
     padding: 36px 32px 48px;
-    border-top: 1px solid rgba(9, 44, 48, 0.14);
+    border-top: 1px solid #0C333424;
 }
 
 .aventuras h2 {
@@ -193,7 +201,7 @@ article {
 
 .aventuras figure {
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .aventuras img {
@@ -206,7 +214,7 @@ article {
 
 .aventuras figcaption {
     margin-top: 8px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 600;
     color: var(--primary-color);
     line-height: 1.35;
